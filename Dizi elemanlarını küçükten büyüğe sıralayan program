@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+
+#include <vector>
+
+int main(){
+int arr1[5] = { 10, 18, 15, 31, 9};
+	int arr1Size = sizeof(arr1)/sizeof(int);
+	
+		for( int j = 0; j < arr1Size; j++)
+	{
+		
+		for( int i = 1; i < arr1Size; i++)
+	{
+			
+			if( arr1[i] < arr1[i-1])
+			{
+				
+				int temp = arr1[i];
+				arr1[i] = arr1[i-1];
+				arr1[i-1] = temp;
+				
+			}
+		
+
+	}
+		
+	}
+	
+	
+	for( int i = 0; i < arr1Size; i++)
+	{
+		cout<< arr1[i] << " ";
+	}
+
+		
+ return 0;
+}
