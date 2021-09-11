@@ -1,0 +1,19 @@
+void getLineAndIgnore(){
+    
+    string a, d;
+    int b;
+   
+    // Your code here
+   
+    getline(cin,a);
+    cin>>b;// Your code here
+    cin.ignore();
+    getline(cin,d);
+    
+   
+    cout << a << endl;
+    
+    cout << b << endl;
+        
+    cout << d << endl;
+}
